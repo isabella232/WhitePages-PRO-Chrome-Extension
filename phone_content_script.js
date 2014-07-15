@@ -11,6 +11,13 @@ if (window == top) {
 // Search the text nodes for a US-style mailing address.
 // Return null if none is found.
 var findAddress = function() {
+
+setTimeout(function() { wp();  
+}, 2500);
+
+}
+
+var wp = function() { 
   var node = document.body;
   wpReversePhoneLookup(node);
 }
