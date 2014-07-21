@@ -13,7 +13,7 @@ if (window == top) {
 var findAddress = function() {
 
 setTimeout(function() { wp();  
-}, 2500);
+}, 100);
 
 }
 
