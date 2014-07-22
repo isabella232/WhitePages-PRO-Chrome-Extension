@@ -1,18 +1,35 @@
 {
-  "name": "WhitePages PRO Reverse Phone Lookup.",
-  "version": "0.1.1",
-  "description": "WhitePages PRO Reverse Phone Lookup.",
-  "icons": { "128": "images/rsz_wp_128.png" },
-  "background": { "scripts": ["background.js"] },
-    "web_accessible_resources": [
-  "images/*.png"
-],
-  "content_scripts": [
-    { "matches": ["http://*/*", "https://*/*"], "js": ["phone_content_script.js"] }
-  ],
-  "permissions": [
-  "tabs", "http://*/*", "https://*/*"
-],
   "manifest_version": 2,
-  "content_security_policy": "default-src 'none'; style-src 'self'; script-src 'self';"
+  "name": "WhitePages PRO",
+  "version": "1.1",
+  "description": "WhitePages PRO Reverse Phone Lookup. Know the who and what behind the phone numbers.",
+  "icons": { "128": "images/rsz_wp_128.png"
+  },
+
+  "web_accessible_resources": [
+    "images/*.png"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "19": "images/rsz_wp_19.png"
+    },
+    "default_title": "WhitePages PRO Reverse Phone Lookup"
+  },
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  } ,
+
+  "content_scripts" : [
+    {
+      "matches" : ["http://*/*", "https://*/*"],
+      "js" : ["jquery-1.9.0.js","content_script.js"],
+      "run_at" : "document_idle",
+      "all_frames" : false
+    }
+  ]
+
 }
