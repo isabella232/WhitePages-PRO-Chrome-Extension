@@ -13,7 +13,8 @@
     "default_icon": {
       "19": "images/rsz_wp_19.png"
     },
-    "default_title": "WhitePages PRO Reverse Phone Lookup"
+    "default_title": "WhitePages PRO Reverse Phone Lookup",
+    "default_popup": "popup.html"
   },
   "permissions": [
     "tabs", "http://*/*", "https://*/*"

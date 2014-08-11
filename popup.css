@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'robotolight';
+  src: url('images/roboto-light-webfont.eot');
+  src: url('images/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('images/roboto-light-webfont.woff') format('woff'),
+  url('images/roboto-light-webfont.ttf') format('truetype'),
+  url('images/roboto-light-webfont.svg#robotolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.contant_popup{
+  width:340px;
+  height:auto;
+}
+.close_b {
+  float:right;
+  margin-bottom:-5px;
+  cursor:pointer;
+  border:0;
+  outline:none;
+  padding: 4px;
+}
+
+.logo_b{
+  width:16%;
+  padding-right:15px;
+}
+.contant_popup p {
+  font-family: 'robotolight';
+  font-size:14px;
+  font-weight:normal;
+  color:#555555;
+  margin:0px;
+  line-height:18px;
+  padding-bottom:8px;
+  margin-right:20px;
+}
+.contant_popup p:last-child {
+  padding-bottom:0px;
+}
